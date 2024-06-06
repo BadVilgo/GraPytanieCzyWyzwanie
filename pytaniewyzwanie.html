@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pytanie czy Wyzwanie?</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link do zewnętrznego pliku CSS -->
+</head>
+<body>
+    <header>
+        <h1>Pytanie czy Wyzwanie?</h1>
+    </header>
+    
+
+    
+    <main>
+        <section id="zasady">
+            <h2>Zasady</h2>
+            <p>Wylosowana osoba wybiera pytanie lub wyzwanie. Jeśli po wylosowaniu nie podejmie się odpowiedzi lub działania - pije alkohol.
+            </p>
+        </section>
+        <section id="gra">
+            <h3>Wybierz mądrze 😉</h3>
+            <div class="buttony">
+                <a class="button pytanie" onclick="getRandomQuestion()">Pytanie</a>
+                <a class="button wyzwanie" onclick="getRandomChallenge()">Wyzwanie</a>
+            </div>
+            <div class="output">
+                <h3 id="output-text">Kliknij Pytanie lub Wyzwanie</h3>
+            </div>
+            <div>
+                <p>Podejmujesz się albo pijesz 🍺</p>
+            </div>
+            
+        </section>
+        <section id="Poziom">
+           
+            <div>
+                <h3>Zbyt łatwe? Zwiększ poziom</h3>
+            </div>
+            <div class="wyborPoziomu">
+                <div class="column">
+                    <a id="left-arrow" class="button arrow"><</a>
+                </div>
+                <div class="column">
+                    <h4 id="level-text">Poziom EASY</h4>
+                    <!-- <p>Poziom MEDIUM</p> -->
+                    <!-- <p>Poziom HARD</p> -->
+                </div>
+                <div class="column">
+                    <a id="right-arrow" class="button arrow">></a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Pytaniewyzwanie.pl wszelkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="questions.js" defer></script>
+    <script src="level.js" defer></script>
+</body>
+</html>

@@ -144,11 +144,11 @@ a.button.arrow{
 footer {
     width: 100%;
     position: absolute;
+    margin-top: 20px;
     bottom: 20px;
     background-color: #343a40;
     color: #fff;
     padding: 10px 0;
-    bottom: 0;
     font-size: 0.8rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
